@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tools — flanberg.org</title>
-    <script type="module" crossorigin src="/assets/index-D2R9-D_1.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-BoGPZYri.css">
+    <script type="module" crossorigin src="/assets/index-CGf3cdTB.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BMKrLogd.css">
   </head>
   <body>
     <header>
@@ -14,6 +14,7 @@
         <ul class="nav-links">
           <li><a href="#cidr" data-tool="cidr">CIDR Calculator</a></li>
           <li><a href="#regex" data-tool="regex">Regex Tester</a></li>
+          <li><a href="#cron" data-tool="cron">Cron Explainer</a></li>
         </ul>
       </nav>
     </header>
@@ -21,10 +22,11 @@
     <main id="app">
       <div id="view-home" class="view">
         <h1>Tools</h1>
-        <p>A collection of utilities for everyday engineering tasks.</p>
+        <p>Handy utilities for engineering.</p>
         <ul class="tool-list">
           <li><a href="#cidr">CIDR Calculator</a> — subnet math, host ranges, and masks</li>
           <li><a href="#regex">Regex Tester</a> — test patterns with live match highlighting</li>
+          <li><a href="#cron">Cron Explainer</a> — translate cron expressions into plain English</li>
         </ul>
       </div>
 
@@ -59,6 +61,18 @@
         </div>
         <div id="regex-highlighted" class="regex-output"></div>
         <div id="regex-matches" class="result-panel"></div>
+      </div>
+
+      <div id="view-cron" class="view hidden">
+        <h1>Cron Explainer</h1>
+        <div class="tool-input-group">
+          <label for="cron-input">Cron expression</label>
+          <input id="cron-input" type="text" placeholder="*/5 * * * *" spellcheck="false" autocomplete="off" />
+          <p id="cron-error" class="error-msg hidden"></p>
+          <p class="hint">Fields: <code>minute</code> <code>hour</code> <code>day-of-month</code> <code>month</code> <code>day-of-week</code></p>
+        </div>
+        <div class="cron-examples" id="cron-examples"></div>
+        <div id="cron-result" class="result-panel hidden"></div>
       </div>
     </main>
 

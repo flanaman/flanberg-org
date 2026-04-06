@@ -317,3 +317,56 @@ mark.match {
   color: var(--text-dim);
   border-bottom: 1px solid var(--border);
 }
+
+/* ── Cron explainer ───────────────────────────────────────────────────────── */
+.cron-examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.cron-example {
+  background: var(--surface);
+  color: var(--text-dim);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.cron-example:hover {
+  background: var(--surface);
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.cron-summary {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--accent);
+}
+
+.cron-next {
+  border-top: 1px solid var(--border);
+}
+
+.cron-runs {
+  list-style: none;
+  padding: 0.25rem 0;
+}
+
+.cron-runs li {
+  padding: 0.4rem 1.25rem;
+  font-size: 0.875rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.cron-runs li:last-child {
+  border-bottom: none;
+}
